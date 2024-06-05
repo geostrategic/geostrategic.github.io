@@ -50,13 +50,21 @@ ul.myUL > li:before {
 
 }
 
+/* menu */
 .menu {
     display: flex;
 }
 
 .menu > a {
-    margin-right: 10px;
+    margin-right: 15px;
     font-size: x-large;
+}
+
+
+
+.selected {
+    color: purple;
+    font-weight: bold;
 }
 
 #old
