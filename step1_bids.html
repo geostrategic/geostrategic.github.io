@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Geostrategic - the tutorial</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Official tutorial of the indie game Geostrategic.">
+</head>
+<body>
+<script src="script.js"></script>
+<div class="main">
+    <!-- banniere-->
+    <!-- div class="banniereDiv">
+        <iframe src="banniere.html" ></iframe>
+    </div-->
+    <br>
+    <div style="text-align: center"><img src="img/titre3.png" alt="GeoStrategic - Indie game"></div>
+    <h1 style="text-align: center">The official tutorial</h1>
+
+
+    <!-- Selecteur de menu -->
+    <div class="menu">
+        <a href="index.html">Overview</a>
+        <a href="step1_bids.html">Step 1 - Bids</a>
+    </div>
+
+    <br/>
+    <!-- STEP 1 : BIDS-->
+    <hr>
+    <h3>Step 1 : BIDS</h3>
+    <!--button class="accordion">Step 1 : BIDS</button-->
+    <div><!-- class="panel" -->
+        <p>In the first part of the game, you make bids for the territories you want to acquire.</p>
+        <p>To achieve this, you have:</p>
+        <ul class="myUL">
+            <li>1: a table of all the players/countries</li>
+            <li>2: a table of all territories available with statistics</li>
+            <li>3: the map</li>
+            <li>4: your credits</li>
+            <li>5: the goal to achieve</li>
+        </ul>
+
+        <p>Click on the territories on the map or click on the button of the lines of a territory in table #2 to make
+            bids for
+            a
+            country.</p>
+        <p>You can't own more than 3 countries.</p>
+        <p>Once you are ready, click on the button "Ask end of bids" to finish the bids.</p>
+        <br/>
+
+        <div class="tableau">
+            <img src="img/p2-encheres_800px_details.png" alt="Part 1: bids">
+            <p class="legende">Step 1: Bids</p>
+        </div>
+    </div>
+
+    <!-- STEP 2 : MAIN GAME-->
+    <hr>
+    <h3>Step 2 : MAIN GAME</h3>
+    <p>After bids, you enter the second part of the game: <b>the main part of the game</b>.</p>
+    <p>The background shows you the map with ground, cities, people, vehicles, factories...<br/>
+        You can :<br/>
+        <b>- zoom and dezoom with keyboard ('+', '-')</b><br/>
+        <b>- move the camera with [arrows].</b>
+    </p>
+    <p>You can notice 5 zones:</p>
+    <ul class="myUL">
+        <li>1: information about your general resources, weekly needs and time</li>
+        <li>2: group of buttons that enable you to see statistics, manage diplomatic relations, trading, see and send
+            messages, shows information on map
+        </li>
+        <li>3: your goal to achieve</li>
+        <li>4: group of buttons to select the sub-group of buttons (5)</li>
+        <li>5: group of buttons to build things or give orders to your people or your vehicles</li>
+    </ul>
+
+    <br/>
+
+    <div class="tableau">
+        <img src="img/p3-jeu_800px_details.png" alt="Part 2: main game">
+        <p class="legende">Step 2: Main game</p>
+    </div>
+
+    <!-- STEP 2.1 : Information -->
+    <hr>
+    <h3>General resources (1)</h3>
+    <p>On the top left of the screen, you can see your general resources.</p>
+    <br/>
+    <div class="tableau">
+        <img src="img/p3_1.png" alt="Your resources">
+        <p class="legende">Your resources</p>
+    </div>
+    <br/>
+
+    <div class="div_horizontal">
+        <div class="div_horizontal width_25pc">
+            <img src="img/p3_1_bois.png" alt="Wood">
+            <p>: Wood</p>
+        </div>
+        <div class="div_horizontal width_25pc">
+            <img src="img/p3_1_poisson.png" alt="Fish">
+            <p>: Fish</p>
+        </div>
+        <div class="div_horizontal width_25pc">
+            <img src="img/p3_1_petrole.png" alt="Oil">
+            <p>: Oil</p>
+        </div>
+        <div class="div_horizontal width_25pc">
+            <img src="img/p3_1_fer.png" alt="Iron">
+            <p>: Iron</p>
+        </div>
+    </div>
+    <br/>
+    <div class="div_horizontal">
+        <div class="div_horizontal width_25pc">
+            <img src="img/p3_1_ur.png" alt="Uranium">
+            <p>: Uranium</p>
+        </div>
+        <div class="div_horizontal width_25pc">
+            <img src="img/p3_1_missile_tactique.png" alt="Tactical missiles">
+            <p>: Tactical missiles</p>
+        </div>
+        <div class="div_horizontal width_25pc">
+            <img src="img/p3_1_missile_nucleaire.png" alt="Nuclear missiles">
+            <p>: Nuclear missiles</p>
+        </div>
+        <div class="div_horizontal width_25pc">
+            <img src="img/p3_1_or.png" alt="Gold">
+            <p>: Gold</p>
+        </div>
+    </div>
+
+    <br/>
+    <p>You can increase the primary resources (wood, fishes, oil, gold) by crafting mines or with international trading.<br/>
+        The number of missiles can be increased by building them or by buying them with international trading.</p>
+
+    <!-- -->
+    <br/>
+    <h3>Weekly needs</h3>
+    <p>Under general resources, the weekly needs show you what your country will require to survive. </p>
+    <ul>
+        <li>If you don't have enough fishes or wood at the end of the week, some of your people will die.</li>
+        <li>If you don't have enough oil, your vehicles won't be able to move.</li>
+    </ul>
+
+
+    <div class="tableau">
+        <img src="img/p3_1B_needs.png" alt="Weekly needs">
+        <p class="legende">Weekly needs</p>
+    </div>
+
+    <p>In this example, you can see that, every week, your <u>3 people</u> will require <u>0 wood</u> and <u>3
+        fishes</u>.
+        And you need <u>0 oil</u>.</p>
+
+    <p>The formulas for needs are the following :</p>
+    <ul>
+        <li>Fish needs: each people will need one fish every week</li>
+        <li>Wood needs: the capital city requires 2 woods and each city will require 1 wood very week</li>
+        <li>Oil needs: each tank requires 1 oil * each helicopter requires 2 oils * reach sub-marines requires 4 oils
+            every week
+        </li>
+    </ul>
+
+
+</div>
+</body>
+</html>
