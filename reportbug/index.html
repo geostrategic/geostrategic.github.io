@@ -1,12 +1,85 @@
-<DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head>
-<title>FoxSoft-Contact</title>
-</head>
-<body>
-<h1>conctactez nous</h1>
-<pre>
+    <head>
+        <title>GeoStrategic-report a bug</title>
+    </head>
+    <style>
+        #win{
+            position: fixed;
+            margin-left: 25%;
+            margin-top: 7vh;
+            background-color: gray;
+            width: 50%;
+            height: 50%;
+            border-radius: 2vh;
+            box-shadow: 0px 0px 1vh;
+            font-family: sans-serif;
+            text-align: center;
+        }
 
-</pre>
-</body>
+        #txt{
+            width: 80%;
+            resize: none;
+            border-radius: 1vh;
+            height: 5em;
+        }
+
+        #btn{
+            width: 10%;
+            height: 4.5em;
+            border-radius: 1vh;
+            background-color: white;
+        }
+
+        #btn:active{
+            background-color: whitesmoke;
+        }
+        h1{
+            margin-top: 1vh;
+        }
+        #OK{
+            width: 90%;
+            margin: 5%;
+            background-color: green;
+            border-radius: 2vh;
+            padding: 1vh;
+            padding-top: 0.5vh;
+            box-shadow: 0px 0px 1vh;
+        }
+    </style>
+    <body oncontextmenu="return false" style="margin: 0px;padding: 0px; height: 100vh;background-color: green; background-image: url(https://img.itch.zone/aW1hZ2UvMjE0NDY5NS8xMjY1OTg3OS5wbmc=/original/UAXwUs.png);">
+        <div id="win">
+            <h1>Report a bug</h1>
+            <div style="display: flex; margin-left: 10%;">
+                <textarea id="txt" a></textarea>
+                <div id="btn" onclick=" send(txt.value);spawn.innerHTML=success"><h2>send</h2></div>
+            </div>
+            <div id="spawn"></div>
+        </div>
+    </body>
+    <script>
+        /*const urlParams = new URLSearchParams(window.location.search);
+        const user = urlParams.get('user');
+        if(user ==null){
+            user ="";
+        }
+        else{
+            user ="-"+user;
+        }*/
+
+        const txt = document.getElementById("txt");
+        const spawn = document.getElementById("spawn");
+        const success = '<div id="OK" \><h2>Successfull</h2\>Your message a been send to the administrator</div\>';
+
+        function send(text){
+            const request = new XMLHttpRequest();
+            request.open("POST", "https://discord.com/api/webhooks/1226202095275872357/0_Ckr38OdMNTItcr1sNyWWa6cr9ZV6AgVVyUmaDijbUByC2Cu7CXbJUyHxfHfLo_Iw3K");
+            request.setRequestHeader('Content-type', 'application/json');
+            const params = {
+                username: "report bug",
+                content: text
+            }
+            request.send(JSON.stringify(params));
+        }
+    </script>
 </html>
